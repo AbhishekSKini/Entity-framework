@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotnetMVC</name>
+    </assembly>
+    <members>
+        <member name="P:DotnetMVC.Entities.Country.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:DotnetMVC.Entities.Country.CountryCode">
+            _string_NULL_base
+            <summary>
+            Gets or sets the country code.
+            </summary>
+        </member>
+        <member name="P:DotnetMVC.Entities.Country.Title">
+            _string_NOT_NULL_base
+            <summary>
+            Gets or sets the from title.
+            </summary>
+        </member>
+        <member name="T:DotnetMVC.Entities.DotNetMVCDbContext">
+            <summary>
+            BurganBankDbContext class
+            </summary>
+        </member>
+        <member name="P:DotnetMVC.Entities.state.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:DotnetMVC.Entities.state.Title">
+            _string_NOT_NULL_base
+            <summary>
+            Gets or sets the from title.
+            </summary>
+        </member>
+    </members>
+</doc>

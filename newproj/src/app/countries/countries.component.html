@@ -1,0 +1,64 @@
+
+
+  <!--<div>
+  
+
+    <input type="text" (keyup)="FilterCountries($event)" />
+    
+      <ul >
+        <li *ngFor="let item of countriesList">
+          
+          {{item.title}} - {{item.countryCode}}
+          <button (click)="states(item.title)">+</button>
+        
+          <div *ngFor="let state of output" >
+            <ul  *ngIf="item.title==state.country" >
+              <li >
+                {{state.title}}
+                
+              </li>
+          
+          
+          </ul> 
+          </div>
+        </li>
+      </ul>
+      
+    </div>-->
+
+   
+    
+
+  <div>
+  
+
+    <input type="text" (keyup)="FilterCountries($event)" />
+    
+      <ul >
+        <li *ngFor="let item of countriesList">
+          <br>
+          {{item.title}} - {{item.countryCode}}
+   
+          <button (click)="states(item.title)">+</button>
+          <br>
+          <div  *ngFor="let state of output"> 
+            <ul   *ngIf="state.country == item.title">
+              <li >
+              {{state.title}}
+              
+              </li>
+            </ul> 
+          </div>
+       
+      <br>
+      <div>
+        <input id="{{item.tite}}" type="text" (keyup.enter)="add($event,item)"/>
+      </div>    
+        </li>
+      </ul>
+      
+      
+   </div>
+
+   
+    
